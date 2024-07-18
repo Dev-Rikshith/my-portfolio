@@ -1,0 +1,70 @@
+/* src/components/VideoBackground.css */
+
+html, body {
+  height: 100%;  /* Ensure the body takes full height */
+  margin: 0;     /* Remove default margin */
+}
+
+.video-background-container {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide anything outside the container */
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container */
+    z-index: -1; /* Place video behind text */
+  }
+
+  .video-overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 0rem;
+    width: 30rem;
+  }
+
+  .btn-container{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .btn {
+    background-color: #ffffff;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 5px 5px;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #007BFF;
+    color: #ffffff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+  .video-overlay-text h2 {
+    font-size: 1.5rem; /* Font size for the title */
+    margin: 0;
+  }
+  
